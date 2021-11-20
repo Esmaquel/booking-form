@@ -5,6 +5,12 @@
   box-sizing: border-box;
   text-decoration: none; }
 
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: lightgray;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
+
 .container-Logo {
   width: 100vw;
   height: 100%;
@@ -23,6 +29,14 @@ h1 {
   padding-bottom: 50px;
   transform: translate(-500px);
   display: block; }
+
+body {
+  background-color: black; }
+
+.container__02 {
+  min-width: 50vw;
+  min-height: 100%;
+  background-color: white; }
 
 body .form-container {
   width: 25vw;
