@@ -16,18 +16,7 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="body container">
-        <header class="header">
-            <div class="content">
-                <nav class="sidebar">
-                    <main class="hotel-view">
-                        Hotel view
-                    </main>
-                </nav>
 
-            </div>
-        </header>
-    </div>
 
 
     <div class="jumbotron jumbotron-fluid">
@@ -35,138 +24,7 @@
           <img src="./img/TNZ_logo.png">
           <!-- <p class="lead">This is a demo to showcase how to loop through<br /> markers and reset markers on user search</p> -->
         </div>
-<<<<<<< HEAD
-    
-=======
-    </nav>
-</div>
 
-
-<!--Start of form container-->
-<div class="form-container">
-    <form action="reservation" method="post" class="userInputForm">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="John Smith" pattern=[A-Z\sa-z]{3,20} required>
-
-    <div class="elem-group">
-        <form action="reservation" method="post" class="userInputForm">
-        <label for="email">Your E-mail</label>
-        <input type="email" id="email" name="email" placeholder="john@email.com" required>
-    </div>
-    <div class="elem-group">
-        <form action="reservation" method="post" class="userInputForm">
-        <label for="phone">Your Phone</label>
-        <input type="tel" id="phone" name="visitor_phone" placeholder="1234567890"
-            pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
-    </div>
-    <hr>
-    <div class="elem-group inlined">
-        <label for="numberOfPeople">Adults</label>
-        <select id="numberOfPeople" name="numberOfPeople">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-        </select>
-    </div>
-
-    <div class="elem-group inlined">
-        <label for="child">Children</label>
-        <select id="numberOfKids" name="numberOfKids">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-        </select>
-    </div>
-    <div class="elem-group inlined">
-        <label for="checkin-date">Check-in Date</label>
-        <input type="date" id="checkInDate" name="checkInDate" required>
-    </div>
-    <div class="elem-group inlined">
-        <label for="checkout-date">Check-out Date</label>
-        <input type="date" id="checkOutDate" name="checkOutDate" required>
-    </div>
-    <div class="elem-group">
-        <h3>accomodation type</h3>
-        <select id="myDropdown" class="dropdown-content">
-            <option value="hotel">hotel</option>
-            <option value="hostel">hostel</option>
-            <option value="motel">motel</option>
-            <option value="house">house</option>
-        </select>
-    </div>
-
-    <div class="elem-group">
-        <h3>add meal</h3>
-        <select id="myDropdownMenu" class="dropdown-content">
-            <option value="breakfast">breakfast</option>
-            <option value="lunch">lunch</option>
-            <option value="dinner">dinner</option>
-            <option value="kids meal">kids meal</option>
-            <option value="none">none</option>
-        </select>
-    </div>
-    <hr>
-
-    <button type="submit" id="userSearch">Book The Rooms</button>
-</form>
-</div>
-<!--end of form container-->
-
-<h1></h1>
-<div class="card-container">
-<div class="card-01">
-    <img src="./img/hotel-01.jpg" alt="Hotel">
-    <div class="container">
-        <h4><b>Hotel</b></h4>
-        <h2>star rating</h2>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-    </div>
-</div>
-<div class="card-02">
-    <img src="./img/motel-01.jpg" alt="Hotel">
-    <div class="container">
-        <h4><b>Motel</b></h4>
-        <h2>star rating</h2>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-        <span class="fa fa-star"></span>
-    </div>
-</div>
-<div class="card-03">
-    <img src="./img/hostel-031.jpg" alt="Hotel">
-    <div class="container">
-        <h4><b>Hostel</b></h4>
-        <h2>star rating</h2>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-        <span class="fa fa-star"></span>
-    </div>
-</div>
-<div class="card-04">
-    <img src="./img/house-021.jpeg" alt="Hotel">
-    <div class="container">
-        <h4><b>House</b></h4>
-        <h2>star rating</h2>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-    </div>
-</div>
->>>>>>> 61694428d8bf8f41213de673e3b5dad6359235e5
 
     <ul class="nav justify-content-center">
         <li class="nav-item">
@@ -182,7 +40,23 @@
           <a class="nav-link" href="#">contact</a>
         </li>
       </ul>
-    </div>  
+    </div>
+
+
+    <div class="search-box">
+      <input type="text" id="Usersearch" name="search">
+      <button>search</button>
+    </div>
+
+
+    <section>
+      <div class="div-features">
+        <div class="features-01"></div>01</div>
+        <div class="features-02"></div>02</div>
+        <div class="features-03"></div>03</div>
+      </div>
+      </section>
+
 
 
     <!-- start of form container -->
@@ -218,22 +92,21 @@
                   <option value="3">3</option>
                   <option value="4">4</option>
                   <option value="5">5</option>
-                 
+
                 </select>
               </div>
 
-
               <div>
                 <label class="meal" for="addMeal">add meal</label>
-                <select name="numberOfkids" id="numberOfkids">
-                  <option value="5">none</option>
-                  <option value="1">breakfast</option>
-                  <option value="2">lunch</option>
-                  <option value="3">dinner</option>
-                  <option value="4">kids meal</option>
-                 
+                <select name="myDropdownMenu" id="myDropdownMenu">
+                  <option value="0">none</option>
+                  <option value="25">breakfast</option>
+                  <option value="30">lunch</option>
+                  <option value="35">dinner</option>
+                  <option value="20">kids meal</option>
+
                 </select>
-                
+
               </div>
 
             <button type="submit" id="userSearch">submit</button>
@@ -265,18 +138,10 @@
 <!-- end of modal -->
 
 
-
-
-
-
-
-
-
-
-
     <!-- start of accomodation card container -->
     <div id="acommodationCardContainer" class="acommodationCardContainer"></div>
-    <!-- end of accomodation card container -->
+ <!-- end of accomodation card container -->
+
 
     <!--start of map container-->
     <div class="map-container">
@@ -286,7 +151,7 @@
 
 
 <!-- Footer -->
-<footer class="page-footer font-small special-color-dark pt
+<footer class="page-footer font-small special-color-dark pt"> </footer>
 
 
   <div class="container-footer"></div>
@@ -336,7 +201,8 @@
 
 
 
-
+    <!-- use downloaded jquery minified version for goole maps to work -->
+    <script src="./jsquery-3.5.1.min.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
