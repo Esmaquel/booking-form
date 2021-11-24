@@ -7844,7 +7844,7 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
-  position: absolute; }
+  position: relative; }
 
 .acommodationCardContainer {
   width: 90vw;

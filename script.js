@@ -3,10 +3,10 @@ const userSearch = document.querySelector('#userSearch');
 const searchFilter = document.querySelector("#searchFilter");
 const list = document.getElementById('list');
 
-const form = document.querySelector("form");
-console.log(form.elements[1].name.type)
-console.log(form.elements.email == form);
-
+// const form = document.querySelector("form");
+// console.log(form.elements[1].name.type)
+// console.log(form.elements.email == form);
+//
 
 let map;
 let markers = [];
@@ -21,11 +21,11 @@ function initMap() {
 let objectArray = [
     {
         id: 101,
-        name: 'hotel',
+        name: 'Hilton Hotel',
         type: 'hotel',
         price: 157,
         image: './img/hotel-01.jpg',
-        meal: ['breakfast', 'lunch', 'dinner', 'kids meal'],
+        meal: './img/breakfast-01.jpg',
         minAdultGuests: 1,
         maxAdultGuests: 2,
         minAdultNights: 1,
@@ -2502,7 +2502,7 @@ function objectArrayCardInfo(x){
                 <h5 class="card-title">${objectArray[x].name}</h5>
                 <p class="card-text">${objectArray[x].type}</p>
                 <p class="card-text">NZD$ ${objectArray[x].price}</p>
-                <button id="${objectArray[x].meal}" type="button" class="btn btn-primary moreInformation" data-toggle="modal" data-target="#exampleModalCenter">Meal Options
+                <button id="${objectArray[x].id}" type="button" class="btn btn-primary moreInformation" data-toggle="modal" data-target="#exampleModalCenter">Meal Options
                 </button>
             </div>
         </div>
@@ -2514,7 +2514,7 @@ function objectArrayCardInfo(x){
 
 
 function objectsLoop(){
-    for(i = 0; i< objectArray.length; i++){
+    for(let i = 0; i< objectArray.length; i++){
         objectArrayCardInfo(i);
     }
 
@@ -2626,7 +2626,15 @@ function TypeAcomodation(event){
     }
     if(selectedAcomodation[i] === 'hostel'){
         console.log('is equal to hostel');
-        }
+    }
+
+    if(selectedAcomodation[i] === 'motel'){
+    console.log('is equal to motel');
+    }
+
+    if(selectedAcomodation[i] === 'house'){
+    console.log('is equal to house');
+    }
 };
 // end of selected loop
 
@@ -2639,7 +2647,7 @@ function generateCard(x){
         <h5 class="card-title">${objectArray[x].name}</h5>
         <p class="card-text">price per night is $${objectArray[x].price}</p>
         <a href="#" class="btn btn-primary">Book</a>
-        <button id="${objectArray[x].meal}" type="button" class="btn btn-primary moreInformation" data-toggle="modal" data-target="#exampleModalCenter">Meal Option</button>
+        <button id="${objectArray[x].id}" type="button" class="btn btn-primary moreInformation" data-toggle="modal" data-target="#exampleModalCenter">Meal Option</button>
       </div>
     </div>
       `
