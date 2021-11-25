@@ -1,50 +1,274 @@
-/*
-Error: Invalid CSS after "    width: 100vw": expected "{", was ";"
-        on line 22 of /Users/270166390/Desktop/Yoobee_file/booking-form/sass/style.scss
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none; }
 
-17:   box-shadow: 0 2rem 6rem rgba(0,0,0,0.3);
-18: 
-19: }
-20: .container-Logo{
-21: >>>>>>> 61694428d8bf8f41213de673e3b5dad6359235e5
-22:     width: 100vw;
-23:     height: 100%;
-24:     align-items: center;
-25: }
-26: 
-27: <<<<<<< HEAD
+.jumbotron-fluid {
+  background-color: black; }
 
-Backtrace:
-/Users/270166390/Desktop/Yoobee_file/booking-form/sass/style.scss:22
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"    width: 100vw\": expected \"{\", was \";\"\A         on line 22 of /Users/270166390/Desktop/Yoobee_file/booking-form/sass/style.scss\A \A 17:   box-shadow: 0 2rem 6rem rgba(0,0,0,0.3);\A 18: \A 19: }\A 20: .container-Logo{\A 21: >>>>>>> 61694428d8bf8f41213de673e3b5dad6359235e5\A 22:     width: 100vw;\A 23:     height: 100%;\A 24:     align-items: center;\A 25: }\A 26: \A 27: <<<<<<< HEAD"; }
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: lightgray;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
+
+.container-Logo {
+  width: 100vw;
+  height: 100%;
+  align-items: center; }
+
+.container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative; }
+
+body {
+  background-color: black; }
+
+.search-box {
+  width: 80vw;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex; }
+
+.container__02 {
+  min-width: 50vw;
+  min-height: 100%;
+  background-color: white; }
+
+.form-container {
+  margin: 0 auto;
+  display: flex;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: absolute; }
+
+.acommodationCardContainer {
+  width: 90vw;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center; }
+
+@media screen and (max-width: 600px) {
+  .form-container {
+    width: 50%; } }
+.container-Logo {
+  width: 100vw;
+  height: 100%;
+  background-color: black;
+  position: relative;
+  display: flex;
+  padding-left: 50px; }
+
+.container-Logo img {
+  width: 350px;
+  height: 100%;
+  display: flex; }
+
+.userInputForm {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  padding-left: 150px;
+  padding-top: 50px; }
+
+footer {
+  width: 100vw;
+  height: 200px;
+  background-color: black;
+  margin-top: 100px; }
+
+.container-footer {
+  font-size: 3rem;
+  color: white; }
+
+.container-footerSign h5 {
+  color: white;
+  font-size: 2rem; }
+
+.mb-1 {
+  font-variant: small-caps; }
+
+.btn-rounded {
+  box-sizing: border-box;
+  border: solid white 1px;
+  border-radius: 10px;
+  color: white; }
+
+.fa-facebook-f, .fa-twitter, .fa-google-plus-g, .fa-linkedin-in {
+  padding-top: 50px;
+  color: white; }
+
+#userSearch {
+  height: 50px;
+  font-variant: small-caps;
+  border-radius: 10px;
+  font-size: 1rem;
+  display: block;
+  background-color: #3498DB;
+  border-color: none;
+  color: white;
+  display: flex;
+  position: relative;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 0.5rem;
+  margin-top: 45px;
+  margin-left: 20px; }
+
+#checkInDate {
+  width: 200px;
+  height: 50px;
+  font-size: 1.5rem;
+  background-color: aliceblue;
+  padding-left: 5px; }
+
+#checkOutDate {
+  width: 200px;
+  height: 50px;
+  font-size: 1.5rem;
+  background-color: aliceblue;
+  padding-left: 5px;
+  position: inherit; }
+
+.Adults {
+  font-size: 1.5rem;
+  font-variant: small-caps;
+  position: inherit; }
+
+#numberOfPeople {
+  width: 150px;
+  height: 50px;
+  font-size: 1.5rem;
+  position: inherit; }
+
+.Kids {
+  font-size: 1.5rem;
+  font-variant: small-caps;
+  position: inherit; }
+
+.meal {
+  font-size: 1.5rem;
+  font-variant: small-caps;
+  position: inherit; }
+
+#numberOfkids {
+  width: 150px;
+  height: 50px;
+  font-size: 1.5rem;
+  position: inherit; }
+
+#myDropdownMenu {
+  width: 150px;
+  height: 50px;
+  font-size: 1.5rem;
+  position: inherit; }
+
+.Checkin {
+  font-size: 1.5rem;
+  font-variant: small-caps;
+  position: inherit; }
+
+.Checkout {
+  font-size: 1.5rem;
+  font-variant: small-caps;
+  position: inherit; }
+
+.form-container {
+  /* background-color: antiquewhite; */
+  position: relative;
+  display: flex; }
+
+@media screen and (max-width: 600px) {
+  .form-container {
+    width: 50%; } }
+ul {
+  background-color: black;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.2rem;
+  font-variant: small-caps;
+  color: white; }
+
+.justify-content-center a {
+  color: white; }
+
+a:hover {
+  background-color: #3498DB; }
+
+.cardContent {
+  width: 100vw;
+  min-height: 15vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem; }
+
+.modalTitle {
+  color: blueviolet; }
+
+h1 {
+  color: white;
+  width: 100vw;
+  height: 100%;
+  background-color: black;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Lucida Sans', Verdana, sans-serif; }
+
+.card-text {
+  background-color: #088080;
+  color: white;
+  padding: 10px 10px 10px; }
+
+.moreInformation {
+  background-color: black;
+  font-size: 1rem;
+  font-variant: small-caps; }
+
+.map-container {
+  margin-top: 100px;
+  position: relative;
+  width: 100vw;
+  height: 400px;
+  background-color: lightcoral; }
+
+.slide #myCarousel {
+  width: 30px;
+  height: 100%; }
+
+#myBtnContainer {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; }
+
+h2 {
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  font-variant: small-caps; }
+
+/*# sourceMappingURL=style.css.map */

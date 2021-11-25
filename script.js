@@ -21,11 +21,13 @@ function initMap() {
 let objectArray = [
     {
         id: 101,
-        name: 'hotel',
+        name: 'Hilton Hotel',
         type: 'hotel',
         price: 157,
         image: './img/hotel-01.jpg',
-        meal: ['breakfast', 'lunch', 'dinner', 'kids meal'],
+        meal: './img/botanist.jpg',
+        meal2: './img/botanist77.jpg',
+        meal3: './img/botanist15.jpg',
         minAdultGuests: 1,
         maxAduktGuests: 2,
         minAdultNights: 1,
@@ -46,7 +48,7 @@ let objectArray = [
         name: 'hotel',
         type: 'hotel',
         price: 157,
-        image: './img/hotel-02.jpeg',
+        image: './img/hotel-02.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
         maxAduktGuests: 2,
@@ -86,11 +88,11 @@ let objectArray = [
 },
     {
         id: 104,
-        name: 'hotel',
+        name: 'hotel-example',
         type: 'hotel',
         price: 157,
         image: './img/hotel-012.jpg',
-        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        meal:'./img/breakfast-01.jpeg',
         minAdultGuests: 1,
         maxAdultGuests: 2,
         minAdultNights: 1,
@@ -390,7 +392,7 @@ let objectArray = [
         name: 'hotel',
         type: 'hotel',
         price: 240,
-        image: './img/hotel-033.jpg',
+        image: './img/hotel033.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
         maxAdultGuests:4,
@@ -410,7 +412,7 @@ let objectArray = [
         name: 'hotel',
         type: 'hotel',
         price: 240,
-        image: './img/hotel-034.jpg',
+        image: './img/hotel034.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
         maxAdultGuests:4,
@@ -430,7 +432,7 @@ let objectArray = [
         name: 'hotel',
         type: 'hotel',
         price: 240,
-        image: './img/hotel-043.jpg',
+        image: './img/hotel043.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
         maxAdultGuests:4,
@@ -446,16 +448,1985 @@ let objectArray = [
         ShowAll: 'All'
     },
 
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-01.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
 
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-02.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
 
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-03.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
 
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-04.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
 
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-012.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
 
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-013.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
 
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-014.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
 
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-021.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
 
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-022.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
 
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-023.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
 
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-024.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-031.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-032.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-033.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-034.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-035.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-041.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-042.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-043.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-044.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-045.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-051.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-052.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-053.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-054.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-055.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+    {
+        id: 120,
+        name: 'hostel',
+        type: 'hostel',
+        price: 240,
+        image: './img/hostel-056.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-01.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-02.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-03.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-04.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-021.jpeg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-022.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-023.jpeg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-024.jpeg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-025.jpeg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-026.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-031.jpeg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-032.jpeg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-033.jpeg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-034.jpeg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-035.jpeg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-036.jpeg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-037.jpeg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-041.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-042.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-043.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-044.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-045.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-046.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-047.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-051.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-052.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-053.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-054.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-055.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-056.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'house',
+        type: 'house',
+        price: 240,
+        image: './img/house-057.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-01.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-012.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-013.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-014.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-015.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+    
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-016.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-021.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-022.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-023.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-024.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-025.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-031.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-032.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-033.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-034.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-035.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-036.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-037.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-041.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-042.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-043.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-044.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-045.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-046.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+    
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-047.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-048.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-051.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-052.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-053.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-054.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-054.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-055.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+    
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-056.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-057.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
+
+    {
+        id: 120,
+        name: 'motel',
+        type: 'motel',
+        price: 240,
+        image: './img/motel-058.jpg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        minAdultGuests: 1,
+        maxAdultGuests:4,
+        minAdultNights:2,
+        maxAdultNights: 15,
+        minKidsGuests: 1,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
+        tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
+        ShowAll: 'All'
+    },
 
 
 
@@ -480,11 +2451,11 @@ function filterOptions(event) {
     let numberOfDays = dateDifference / msday;
     console.log(numberOfDays);
 
-    let numberOfPeople, numberOfkids, DropdownMenu = $('#numberOfPeople') + $("#numberOfkids") + $("#myDropdownMenu").val();
+    let numberOfPeople, numberOfkids, myDropdownMenu = $('#numberOfPeople') + $("#numberOfkids") + $("#myDropdownMenu").val();
     console.log(numberOfPeople);
     console.log(numberOfkids);
-    console.log(DropdownMenu);
-    displayOptions(numberOfDays, numberOfPeople, DropdownMenu);
+    console.log(myDropdownMenu);
+    displayOptions(numberOfDays, numberOfPeople, myDropdownMenu);
 
 
     function displayOptions(nights, guests, Addmeal) {
@@ -492,7 +2463,7 @@ function filterOptions(event) {
         console.log(nights);
         console.log(guests);
         console.log(Addmeal);
-        $('#objectArrayModalInfo').empty();
+        $('#acommodationCardContainer').empty();
         for (let i = 0; i < objectArray.length; i++) {
             if (((nights <= objectArray[i].maxAdultNights) && (nights >= objectArray[i].minAdultNights)) + ((nights <= objectArray[i].maxKidsNights) && (nights >= objectArray[i].minKidsNights))
                 && ((guests <= objectArray[i].maxAdultGuests) && (guests >= objectArray[i].minAdultGuests)) + ((nights <= objectArray[i].maxKidsNights) && (nights >= objectArray[i].minKidsNights))) {
@@ -524,19 +2495,21 @@ function reloadMarkers(){
 //start modal---
 
 
-function objectArrayCardInfo(){
+function objectArrayCardInfo(x){
     let i = 0;
     for(i = 0; i<objectArrayCardInfo.length; i++){
         $('#acommodationCardContainer').append(
             `
             <div class="card" style="width: 15rem;">
-            <img class="card-img-top" src="${objectArray[i].image}" alt="Card image cap">
+            <img class="card-img-top" src="${objectArray[x].image}" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">${objectArray[i].name}</h5>
-                <p class="card-text">${objectArray[i].type}</p>
-                <p class="card-text">NZD$ ${objectArray[i].price}</p>
-                <button id="${objectArray[i].meal}" type="button" class="btn btn-primary moreInformation" data-toggle="modal" data-target="#exampleModalCenter">Meal Options
-                </button>
+            <i class="fas fa-map-marker-alt"> ${objectArray[x].mapIcon}</i>
+
+                <h5 class="card-title">${objectArray[x].name}</h5>
+                <p class="card-text">${objectArray[x].type}</p>
+                <p class="card-text">NZD$ ${objectArray[x].price}</p>
+                <button id="${objectArray[x].id}" type="button" class="btn btn-primary moreInformation" data-toggle="modal" data-target="#exampleModalCenter">Meal Options</button>
+              
             </div>
         </div>
 
@@ -547,7 +2520,10 @@ function objectArrayCardInfo(){
 
 
 function objectsLoop(){
-    objectArrayCardInfo();
+    for(i = 0; i< objectArray.length; i++){
+        objectArrayCardInfo(i);
+    }
+    
 
 $(".moreInformation").click(function(){
         console.log("clicked");
@@ -558,8 +2534,50 @@ $(".moreInformation").click(function(){
 
                     `
                      <p>${objectArray[i].name}</p>
-                     <p>We update our recipe weekly</p>
-                     <img class="card-img-top" src="${objectArray[i].meal}" alt="Meal Options">
+                     <h3>More About This Experience</h3>
+                     <p>Lunch Time Eats Whether you need to pick something up on the run or wanting to sit down for a longer lunch affair, the city centre has an incredible number of options for you this lunchtime. From dining precincts and must-try restaurants to poke bars and treasured cafes, there's an option for you.
+                     </p>
+                   
+
+
+                     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                     <ol class="carousel-indicators">
+                       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                       <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                       <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                       <div class="carousel-item active">
+                         <img src="./img/botanist11.jpg" class="d-block w-100" alt="...">
+                         <div class="carousel-caption d-none d-md-block">
+                           <h5>Pan Cake</h5>
+                           <p>Gluten free with almond and berries</p>
+                         </div>
+                       </div>
+                       <div class="carousel-item">
+                         <img src="./img/botanist12.jpg" class="d-block w-100" alt="...">
+                         <div class="carousel-caption d-none d-md-block">
+                           <h5>Second slide label</h5>
+                           <p>Some representative placeholder content for the second slide.</p>
+                         </div>
+                       </div>
+                       <div class="carousel-item">
+                         <img src="./img/botanist13.jpg" class="d-block w-100" alt="...">
+                         <div class="carousel-caption d-none d-md-block">
+                           <h5>Third slide label</h5>
+                           <p>Some representative placeholder content for the third slide.</p>
+                         </div>
+                       </div>
+                     </div>
+                     <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                       <span class="sr-only">Previous</span>
+                     </button>
+                     <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                       <span class="sr-only">Next</span>
+                     </button>
+                   </div>
 
                     `
                 );
@@ -594,7 +2612,7 @@ function TypeAcomodation(event){
             let i = 0;
             for (i = 0; i < objectArray.length; i++) {
                 //    start of if statement
-                // check to see if fish is equal to kind of fish
+                // check to see if hotel is equal to kind of hotel
                 if (objectArray[i].type === 'hotel') {
                     let i = 0;
                     for (i = 0; i < objectArray.length; i++);
@@ -609,7 +2627,7 @@ function TypeAcomodation(event){
                                             <h5 class="card-title">${objectArray[i].name}</h5>
                                             <p class="card-text">${objectArray[i].type}</p>
                                             <p class="card-text">$${objectArray[i].price}</p>
-                                            <button id="${objectArray[i].id}" type="button" class="btn btn-primary moreInformation" data-toggle="modal" data-target="#exampleModalCenter">
+                                            <button id="${objectArray[i].meal}" type="button" class="btn btn-primary moreInformation" data-toggle="modal" data-target="#exampleModalCenter">
                                                 more info
                                             </button>
                                         </div>
@@ -639,7 +2657,7 @@ function TypeAcomodation(event){
                                     <h5 class="card-title">${objectArray[i].name}</h5>
                                     <p class="card-text">${objectArray[i].type}</p>
                                     <p class="card-text">$${objectArray[i].price}</p>
-                                    <button id="${objectArray[i].id}" type="button" class="btn btn-primary moreInformation" data-toggle="modal" data-target="#exampleModalCenter">
+                                    <button id="${objectArray[i].meal}" type="button" class="btn btn-primary moreInformation" data-toggle="modal" data-target="#exampleModalCenter">
                                         more info
                                     </button>
                                 </div>
@@ -659,6 +2677,13 @@ function TypeAcomodation(event){
     if(selectedAcomodation[i] === 'hostel'){
         console.log('is equal to hostel');
         }
+    if(selectedAcomodation[i] === 'hostel'){
+        console.log('is equal to hostel');
+        }
+    
+    if(selectedAcomodation[i] === 'hostel'){
+        console.log('is equal to hostel');
+        }
 };
 // end of selected loop
 
@@ -666,6 +2691,7 @@ function generateCard(x){
   $('#acommodationCardContainer').append(
       `
       <div class="card" style="width: 18rem;">
+      
       <img class="card-img-top" src="${objectArray[x].image}" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">${objectArray[x].name}</h5>
@@ -684,29 +2710,40 @@ function generateCard(x){
 userSearch.addEventListener('click',filterOptions);
 
 
-// var slideIndex = 1;
-// showSlides(slideIndex);
 
-// function plusSlides(n) {
-//   showSlides(slideIndex += n);
-// }
+filterSelection("all")
+function filterSelection(c) {
+  let y, i;
+  y = document.getElementsById("#objectArrayModalInfo");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    returnALl(x[i], "show");
+      if (x[i].tag.indexOf(c) > -1) returnALl(x[i], "show");
 
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
+  }
+}
 
-// function showSlides(n) {
-//   var i;
-//   var slides = document.getElementsByClassName("mySlides");
-//   var dots = document.getElementsByClassName("dot");
-//   if (n > slides.length) {slideIndex = 1}
-//   if (n < 1) {slideIndex = slides.length}
-//   for (i = 0; i < slides.length; i++) {
-//       slides[i].style.display = "none";
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//       dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   slides[slideIndex-1].style.display = "block";
-//   dots[slideIndex-1].className += " active";
-// }
+function returnALl(element, name) {
+    let i, arr1, arr2;
+    arr1 = element.containerCategory.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+  }
+  
+  function returnALl(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.containerCategory.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.containerCategory = arr1.join(" ");
+  }
+  
+
+var myCarousel = document.querySelector('#myCarousel')
+var carousel = new bootstrap.Carousel(myCarousel)
