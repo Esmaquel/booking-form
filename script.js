@@ -3,10 +3,11 @@ const userSearch = document.querySelector('#userSearch');
 const searchFilter = document.querySelector("#searchFilter");
 const list = document.getElementById('list');
 
-const form = document.querySelector("form");
-console.log(form.elements[1].name.type)
-console.log(form.elements.email == form);
 
+// const form = document.querySelector("form");
+// console.log(form.elements[1].name.type)
+// console.log(form.elements.email == form);
+//
 
 let map;
 let markers = [];
@@ -25,11 +26,16 @@ let objectArray = [
         type: 'hotel',
         price: 157,
         image: './img/hotel-01.jpg',
-        meal: './img/botanist.jpg',
-        meal2: './img/botanist77.jpg',
-        meal3: './img/botanist15.jpg',
+        image01: './img/hotel-02.jpg',
+        image02: './img/hotel-011.jpg',
+        image03: './img/hotel-012.jpg',
+        info: 'It offers stylish accomodation with picturesque views of the hillsides and Botanic Garden',
+        heading: 'Get the celebrity treatment with world-class service at Hilton Hotel Centrally located at CBD Wellington.',
+        Facilities: '',
         minAdultGuests: 1,
         maxAduktGuests: 2,
+        minAdultGuests: 1,
+        maxAdultGuests: 2,
         minAdultNights: 1,
         maxAdultNights: 5,
         minKidsGuests: 1,
@@ -51,7 +57,7 @@ let objectArray = [
         image: './img/hotel-02.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
-        maxAduktGuests: 2,
+        maxAdultGuests: 2,
         minAdultNights: 1,
         maxAdultNights: 5,
         minKidsGuests: 1,
@@ -74,7 +80,7 @@ let objectArray = [
         image: './img/hotel-011.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
-        maxAduktGuests: 2,
+        maxAdultGuests: 2,
         minAdultNights: 1,
         maxAdultNights: 5,
         minKidsGuests: 1,
@@ -88,22 +94,23 @@ let objectArray = [
 },
     {
         id: 104,
-        name: 'hotel-example',
+        name: 'hotel',
         type: 'hotel',
         price: 157,
         image: './img/hotel-012.jpg',
-        meal:'./img/breakfast-01.jpeg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
         maxAdultGuests: 2,
         minAdultNights: 1,
         maxAdultNights: 5,
         minKidsGuests: 1,
-        maxKidsGuests: 2,
-        minKidsNights: 1,
-        maxKidsNights: 5,
+        maxKidsGuests:4,
+        minKidsNights:2,
+        maxKidsNights: 15,
         tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
-        latitude: 65.60558712361096,
-        longitude: -18.65329363247231,
+        latitude: 64.07384853513256,
+        longitude: -21.485987309390673,
+        mapIcon: './map-marker-alt-solid.svg',
         ShowAll: 'All'
 },
     {
@@ -140,7 +147,7 @@ let objectArray = [
         minKidsGuests: 2,
         maxKidsGuests:4,
         minKidsNights:3,
-        maxKidsNights:10,  
+        maxKidsNights:10,
         tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
         latitude: 65.06074936401986,
         longitude: -16.69548393975031,
@@ -452,7 +459,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-01.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -473,7 +480,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-02.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -494,7 +501,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-03.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -515,7 +522,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-04.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -536,7 +543,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-012.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -557,7 +564,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-013.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -578,7 +585,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-014.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -599,7 +606,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-021.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -620,7 +627,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-022.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -641,7 +648,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-023.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -662,7 +669,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-024.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -683,7 +690,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-031.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -704,7 +711,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-032.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -725,7 +732,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-033.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -746,7 +753,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-034.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -767,7 +774,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-035.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -788,7 +795,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-041.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -809,7 +816,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-042.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -830,7 +837,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-043.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -851,7 +858,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-044.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -872,7 +879,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-045.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -893,7 +900,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-051.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -935,7 +942,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-053.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -956,7 +963,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-054.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -977,7 +984,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-055.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -997,7 +1004,7 @@ let objectArray = [
         id: 120,
         name: 'hostel',
         type: 'hostel',
-        price: 240,
+        price: 30,
         image: './img/hostel-056.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -1666,7 +1673,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-01.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -1687,7 +1694,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-012.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -1708,7 +1715,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-013.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -1730,7 +1737,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-014.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -1752,7 +1759,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-015.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -1769,12 +1776,12 @@ let objectArray = [
         mapIcon: './map-marker-alt-solid.svg',
         ShowAll: 'All'
     },
-    
+
     {
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-016.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -1796,7 +1803,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-021.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -1818,7 +1825,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-022.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -1840,7 +1847,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-023.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -1862,7 +1869,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-024.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -1884,7 +1891,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-025.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -1906,7 +1913,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-031.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -1928,7 +1935,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-032.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -1949,7 +1956,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-033.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -1971,7 +1978,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-034.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -1993,7 +2000,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-035.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -2015,7 +2022,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-036.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -2037,7 +2044,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-037.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -2059,7 +2066,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-041.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -2081,7 +2088,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-042.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -2103,7 +2110,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-043.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -2125,7 +2132,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-044.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -2147,7 +2154,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-045.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -2169,7 +2176,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-046.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -2186,12 +2193,11 @@ let objectArray = [
         mapIcon: './map-marker-alt-solid.svg',
         ShowAll: 'All'
     },
-    
     {
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-047.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -2213,7 +2219,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-048.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -2235,7 +2241,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-051.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -2256,7 +2262,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-052.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -2278,7 +2284,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-053.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -2300,7 +2306,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-054.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -2322,7 +2328,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-054.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -2344,7 +2350,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-055.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -2361,12 +2367,11 @@ let objectArray = [
         mapIcon: './map-marker-alt-solid.svg',
         ShowAll: 'All'
     },
-    
     {
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-056.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -2388,7 +2393,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-057.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -2410,7 +2415,7 @@ let objectArray = [
         id: 120,
         name: 'motel',
         type: 'motel',
-        price: 240,
+        price: 90,
         image: './img/motel-058.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
@@ -2429,9 +2434,6 @@ let objectArray = [
     },
 
 
-
-
-    
 ];
 
 
@@ -2458,11 +2460,11 @@ function filterOptions(event) {
     displayOptions(numberOfDays, numberOfPeople, myDropdownMenu);
 
 
-    function displayOptions(nights, guests, Addmeal) {
+    function displayOptions(nights, guests, addMeal) {
         reloadMarkers();
         console.log(nights);
         console.log(guests);
-        console.log(Addmeal);
+        console.log(addMeal);
         $('#acommodationCardContainer').empty();
         for (let i = 0; i < objectArray.length; i++) {
             if (((nights <= objectArray[i].maxAdultNights) && (nights >= objectArray[i].minAdultNights)) + ((nights <= objectArray[i].maxKidsNights) && (nights >= objectArray[i].minKidsNights))
@@ -2503,13 +2505,12 @@ function objectArrayCardInfo(x){
             <div class="card" style="width: 15rem;">
             <img class="card-img-top" src="${objectArray[x].image}" alt="Card image cap">
             <div class="card-body">
-            <i class="fas fa-map-marker-alt"> ${objectArray[x].mapIcon}</i>
-
+                <i class="fas fa-map-marker-alt"> ${objectArray[x].mapIcon}</i>
                 <h5 class="card-title">${objectArray[x].name}</h5>
                 <p class="card-text">${objectArray[x].type}</p>
                 <p class="card-text">NZD$ ${objectArray[x].price}</p>
-                <button id="${objectArray[x].id}" type="button" class="btn btn-primary moreInformation" data-toggle="modal" data-target="#exampleModalCenter">Meal Options</button>
-              
+                <button id="${objectArray[x].id}" type="button" class="btn btn-primary moreInformation" data-toggle="modal" data-target="#exampleModalCenter">Meal Options
+                </button>
             </div>
         </div>
 
@@ -2520,10 +2521,10 @@ function objectArrayCardInfo(x){
 
 
 function objectsLoop(){
-    for(i = 0; i< objectArray.length; i++){
+    for(let i = 0; i< objectArray.length; i++){
         objectArrayCardInfo(i);
     }
-    
+
 
 $(".moreInformation").click(function(){
         console.log("clicked");
@@ -2533,51 +2534,26 @@ $(".moreInformation").click(function(){
                 $("#objectArrayModalInfo").empty().append(
 
                     `
+
+                     <h4>${objectArray[i].heading}</h4>
                      <p>${objectArray[i].name}</p>
-                     <h3>More About This Experience</h3>
-                     <p>Lunch Time Eats Whether you need to pick something up on the run or wanting to sit down for a longer lunch affair, the city centre has an incredible number of options for you this lunchtime. From dining precincts and must-try restaurants to poke bars and treasured cafes, there's an option for you.
-                     </p>
-                   
+                     <p>${objectArray[i].info}</p>
 
 
-                     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                     <ol class="carousel-indicators">
-                       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                       <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                       <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                     </ol>
-                     <div class="carousel-inner">
-                       <div class="carousel-item active">
-                         <img src="./img/botanist11.jpg" class="d-block w-100" alt="...">
-                         <div class="carousel-caption d-none d-md-block">
-                           <h5>Pan Cake</h5>
-                           <p>Gluten free with almond and berries</p>
-                         </div>
-                       </div>
-                       <div class="carousel-item">
-                         <img src="./img/botanist12.jpg" class="d-block w-100" alt="...">
-                         <div class="carousel-caption d-none d-md-block">
-                           <h5>Second slide label</h5>
-                           <p>Some representative placeholder content for the second slide.</p>
-                         </div>
-                       </div>
-                       <div class="carousel-item">
-                         <img src="./img/botanist13.jpg" class="d-block w-100" alt="...">
-                         <div class="carousel-caption d-none d-md-block">
-                           <h5>Third slide label</h5>
-                           <p>Some representative placeholder content for the third slide.</p>
-                         </div>
-                       </div>
-                     </div>
-                     <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
-                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                       <span class="sr-only">Previous</span>
-                     </button>
-                     <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
-                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                       <span class="sr-only">Next</span>
-                     </button>
-                   </div>
+                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="${objectArray[i].image01}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="${objectArray[i].image02}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="${objectArray[i].image03}" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        </div>
+
 
                     `
                 );
@@ -2643,8 +2619,6 @@ function TypeAcomodation(event){
         if (selectedAcomodation[i] === 'motel') {
             let i = 0;
             for (i = 0; i < objectArray.length; i++) {
-                //    start of if statement
-                // check to see if salmon is equal to smoked salmon
                 if (objectArray[i].type === 'motel') {
                     //    start of append
                     $('#cardContent').append(
@@ -2676,14 +2650,15 @@ function TypeAcomodation(event){
     }
     if(selectedAcomodation[i] === 'hostel'){
         console.log('is equal to hostel');
-        }
-    if(selectedAcomodation[i] === 'hostel'){
-        console.log('is equal to hostel');
-        }
-    
-    if(selectedAcomodation[i] === 'hostel'){
-        console.log('is equal to hostel');
-        }
+    }
+
+    if(selectedAcomodation[i] === 'motel'){
+    console.log('is equal to motel');
+    }
+
+    if(selectedAcomodation[i] === 'house'){
+    console.log('is equal to house');
+    }
 };
 // end of selected loop
 
@@ -2691,13 +2666,13 @@ function generateCard(x){
   $('#acommodationCardContainer').append(
       `
       <div class="card" style="width: 18rem;">
-      
+
       <img class="card-img-top" src="${objectArray[x].image}" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">${objectArray[x].name}</h5>
         <p class="card-text">price per night is $${objectArray[x].price}</p>
         <a href="#" class="btn btn-primary">Book</a>
-        <button id="${objectArray[x].meal}" type="button" class="btn btn-primary moreInformation" data-toggle="modal" data-target="#exampleModalCenter">Meal Option</button>
+        <button id="${objectArray[x].id}" type="button" class="btn btn-primary moreInformation" data-toggle="modal" data-target="#exampleModalCenter">More Info</button>
       </div>
     </div>
       `
@@ -2731,7 +2706,7 @@ function returnALl(element, name) {
       if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
     }
   }
-  
+
   function returnALl(element, name) {
     var i, arr1, arr2;
     arr1 = element.containerCategory.split(" ");
@@ -2743,7 +2718,7 @@ function returnALl(element, name) {
     }
     element.containerCategory = arr1.join(" ");
   }
-  
+
 
 var myCarousel = document.querySelector('#myCarousel')
 var carousel = new bootstrap.Carousel(myCarousel)

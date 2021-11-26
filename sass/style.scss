@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+@import "../bootstrap-4.5.3/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
 
 *{
     margin: 0;
@@ -6,9 +8,24 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
+.header-bannerNav{
+  width: 100vw;
+  height: 150px;
+  position: relative;
+  padding-bottom: 15rem;
+
+
+}
+.image-logo img{
+  width: 350px;
+  padding-left: 30px;
+  padding-top: 50px;
+}
 .jumbotron-fluid{
     background-color: black;}
-    
+
+
 .container{
   max-width: 120rem;
   margin: 8rem auto;
@@ -30,16 +47,8 @@
 
 }
 body{
-  background-color: black;
-}
+  background-color: black;}
 
-.search-box{
-  width: 80vw;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
 .container__02{
   min-width: 50vw;
   min-height: 100%;
@@ -50,11 +59,16 @@ body{
   margin: 0 auto;
   display: flex;
   padding: 50px;
-  align-items: center;
-  justify-content: center;
   color: white;
-  position: absolute;
-
+  position: relative;
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+@media screen and (max-width: 600px) {
+    .form-container{
+    width: 50%;
+  }
 }
 .acommodationCardContainer{
   width: 90vw;
@@ -64,11 +78,6 @@ body{
   gap: 10px;
   align-items: center;
   justify-content: center;
-}
-  @media screen and (max-width: 600px) {
-    .form-container{
-    width: 50%;
-  }
 }
 
 .container-Logo{
@@ -139,8 +148,8 @@ footer{
     padding-top: 0.5rem;
     margin-top: 45px;
     margin-left: 20px;
-    
-    
+
+
 }
 #checkInDate{
     width: 200px;
@@ -161,6 +170,7 @@ footer{
     font-size: 1.5rem;
     font-variant: small-caps;
     position: inherit;
+    color: black;
 
 }
 #numberOfPeople{
@@ -173,12 +183,14 @@ footer{
     font-size: 1.5rem;
     font-variant: small-caps;
     position: inherit;
+    color: black;
 }
 
 .meal{
     font-size: 1.5rem;
     font-variant: small-caps;
     position: inherit;
+    color: black;
 }
 
 #numberOfkids{
@@ -197,14 +209,15 @@ footer{
     font-size: 1.5rem;
     font-variant: small-caps;
     position: inherit;
+    color: black;
 }
 .Checkout{
     font-size: 1.5rem;
     font-variant: small-caps;
     position: inherit;
+    color: black;
 }
 .form-container{
-    /* background-color: antiquewhite; */
     position: relative;
     display: flex;
 
@@ -296,7 +309,7 @@ h1{
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
   // margin-bottom: 50px;
 }
 h2{
@@ -313,3 +326,56 @@ h2{
   margin-bottom: 100px;
 }
 
+.map-container{
+  margin-top: 100px;
+  width: 100vw;
+  height: 500px;
+  background-color: lightcoral;
+  position: relative;
+}
+
+.carousel-item h5{
+  font-size: 2.5rem;
+  box-shadow: 0.5rem;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.carousel-item h5 span{
+  color: gold;
+  text-shadow: none;
+}
+
+
+.carousel-item p{
+  font-size: 1.8rem;
+
+}
+
+.accomodation-features{
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+
+}
+.features-01 img{
+  width: 30vw;
+  height: 50%;
+}
+.features-02 img{
+  width: 30vw;
+  height: 50%;
+}
+.features-03 img{
+  width: 30vw;
+  height: 50%;
+}
+h1 span{
+  color: gold;
+
+}

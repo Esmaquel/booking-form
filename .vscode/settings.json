@@ -1,3 +1,8 @@
 {
+<<<<<<< HEAD
     "liveServer.settings.port": 5502
+=======
+    "liveServer.settings.port": 5501,
+    "svn.ignoreMissingSvnWarning": true
+>>>>>>> c878d985d48b75b102e0341d55b866e6962f70d2
 }
