@@ -31,7 +31,7 @@ let objectArray = [
         image03: './img/hotel-012.jpg',
         info: 'It offers stylish accomodation with picturesque views of the hillsides and Botanic Garden',
         heading: 'Get the celebrity treatment with world-class service at Hilton Hotel Centrally located at CBD Wellington.',
-        Facilities: '',
+        Facilities: './img/parking-solid.svg',
         minAdultGuests: 1,
         maxAduktGuests: 2,
         minAdultGuests: 1,
@@ -508,6 +508,9 @@ let objectArray = [
         info: 'The cosy ground floor guest suite has a separate entry providing guest privacy and comes with a carpark right outside.The CBD is within reach, a 10 minute walk will get you to a bus stop but if walking (uphill or downhill) is a concern access by car is best. It is approximately a 10 minute car ride to Te Pa',
         heading: 'Our house is situated in a friendly neighbourhood at the end of a private cul-de-sac.',
         Facilities: '',
+        Facilities2: '',
+        Facilities3: '',
+        Facilities4: '',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
         minAdultGuests: 1,
         maxAdultGuests:4,
@@ -732,7 +735,7 @@ function objectArrayCardInfo(x){
                 <h5 class="card-title">${objectArray[x].name}</h5>
                 <p class="card-text">${objectArray[x].type}</p>
                 <p class="card-text">NZD$ ${objectArray[x].price}</p>
-                <button id="${objectArray[x].id}" type="button" class="btn btn-primary moreInformation" data-toggle="modal" data-target="#exampleModalCenter">Meal Options
+                <button id="${objectArray[x].id}" type="button" class="btn btn-primary moreInformation" data-toggle="modal" data-target="#exampleModalCenter">More Info
                 </button>
             </div>
         </div>
@@ -759,8 +762,12 @@ $(".moreInformation").click(function(){
                     `
 
                      <h4>${objectArray[i].heading}</h4>
-                     <p>${objectArray[i].name}</p>
+                     <p>${objectArray[i].name}</p>gi
                      <p>${objectArray[i].info}</p>
+                     <i class="fas fa-parking" ${objectArray[i].Facilities}></i>
+                     <i class="fas fa-wifi" ${objectArray[i].Facilities2}></i>
+                     <i class="fas fa-sink" ${objectArray[i].Facilities3}></i>
+                     <i class="fab fa-accessible-icon" ${objectArray[i].Facilities4}></i>
 
 
                      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
