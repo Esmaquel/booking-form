@@ -214,6 +214,7 @@
     <!--start of map container-->
     <div class="map-container">
       <div id="map" class="map"></div>
+     
     </div>
     <!--end of map container-->
 
@@ -272,6 +273,8 @@
     <!-- use downloaded jquery minified version for goole maps to work -->
     <script src="./jsquery-3.5.1.min.js"></script>
     <!-- Optional JavaScript -->
+
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -283,7 +286,12 @@
 
 
 <!--google map API-->
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxwJJKGGm2Am-sfsrk7ojTOy-Izff-Hs8=initMap"></script>
+
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxwJJKGGm2Am-sfsrk7ojTOy-Izff-Hs8&callback=initMap&libraries=&v=weekly"
+async
+></script>
+
 
     <!-- local script -->
     <script src="./script.js"></script>

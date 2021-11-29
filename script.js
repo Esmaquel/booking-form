@@ -13,10 +13,17 @@ let map;
 let markers = [];
 
 function initMap() {
-    let wellington = { latitude: 41.2924, longitude: -174.7787 };
-    map = new google.maps.Map(document.getElementById('map'),{
+    let wellington = { lat: -41.2924, lng: 174.7787 };
+    const map = new google.maps.Map(document.getElementById('map'),{
             zoom: 8,
-            center: wellington
+            center: wellington,
+    
+        });
+
+    const marker = new google.maps.Marker({
+        position: wellington,
+        map:map,
+           
     });
 };
 let objectArray = [
@@ -762,7 +769,7 @@ $(".moreInformation").click(function(){
                     `
 
                      <h4>${objectArray[i].heading}</h4>
-                     <p>${objectArray[i].name}</p>gi
+                     <p>${objectArray[i].name}</p>
                      <p>${objectArray[i].info}</p>
                      <i class="fas fa-parking" ${objectArray[i].Facilities}></i>
                      <i class="fas fa-wifi" ${objectArray[i].Facilities2}></i>
