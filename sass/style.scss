@@ -9,6 +9,21 @@
     text-decoration: none;
 }
 
+
+.input-group{
+    width: 50vw;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    border-style: solid, black;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    transform: translate(200px);
+
+}
+
 .header-bannerNav{
   width: 100vw;
   height: 150px;
