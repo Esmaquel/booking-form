@@ -18,10 +18,13 @@
     padding-top: 100px;
     border-style: solid, black;
     display: flex;
-    flex-direction: row-reverse;
     position: relative;
-    transform: translate(200px);
+  
+}
 
+.fa .fa-search{
+  height: 500px;
+  padding-left: 50px;
 }
 
 .header-bannerNav{
