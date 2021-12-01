@@ -4,21 +4,28 @@ const searchFilter = document.querySelector("#searchFilter");
 const list = document.getElementById('list');
 
 
+
 // const form = document.querySelector("form");
 // console.log(form.elements[1].name.type)
 // console.log(form.elements.email == form);
 //
 
+
+
+
 let map;
 let markers = [];
 
+
+
 function initMap() {
+
     let wellington = { lat: -41.2924, lng: 174.7787 };
     const map = new google.maps.Map(document.getElementById('map'),{
-            zoom: 8,
-            center: wellington,
-
-        });
+        zoom: 6,
+        center: {lat:-40.9006, lng:174.8860},
+        mapTypeId: 'satellite'
+    });
 
     const marker = new google.maps.Marker({
         position: wellington,
@@ -26,6 +33,9 @@ function initMap() {
 
     });
 };
+
+
+
 let objectArray = [
     {
         id: 101,
@@ -50,7 +60,7 @@ let objectArray = [
         minKidsNights: 1,
         maxKidsNights: 5,
         tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
-        latitude: 65.60558712361096,
+        latitude: 41.2841,
         longitude: -18.65329363247231,
         ShowAll: 'All'
     },
@@ -69,6 +79,10 @@ let objectArray = [
         heading: 'Conveniently located above the international terminal of Wellington Airport,',
         Facilities: '',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        Breakfast: '25',
+        Lunch: '30',
+        Dinner: '35',
+        KidsMenu: '20',
         minAdultGuests: 1,
         maxAdultGuests: 2,
         minAdultNights: 1,
@@ -78,9 +92,11 @@ let objectArray = [
         minKidsNights: 1,
         maxKidsNights: 5,
         tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
-        latitude: 65.60558712361096,
-        longitude: -18.65329363247231,
+        latitude: 174.77419993855042,
+        longitude:  -41.26891266858434,
         ShowAll: 'All'
+
+        
 
 
     },
@@ -98,6 +114,9 @@ let objectArray = [
         heading: 'Situated in Wellington CBD ',
         Facilities: '',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        Lunch: '30',
+        Dinner: '35',
+        KidsMenu: '20',
         minAdultGuests: 1,
         maxAdultGuests: 2,
         minAdultNights: 1,
@@ -107,9 +126,11 @@ let objectArray = [
         minKidsNights: 1,
         maxKidsNights: 5,
         tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
-        latitude: 65.60558712361096,
-        longitude: -18.65329363247231,
+        latitude: 174.77460843873789,
+        longitude: -41.27948936059789,
         ShowAll: 'All'
+
+         
 },
     {
         id: 104,
@@ -125,6 +146,9 @@ let objectArray = [
         Facilities: '',
         image: './img/hotel-012.jpg',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        Lunch: '30',
+        Dinner: '35',
+        KidsMenu: '20',
         minAdultGuests: 1,
         maxAdultGuests: 2,
         minAdultNights: 1,
@@ -134,10 +158,12 @@ let objectArray = [
         minKidsNights:2,
         maxKidsNights: 15,
         tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
-        latitude: 64.07384853513256,
-        longitude: -21.485987309390673,
+        latitude: 174.7866651689101,
+        longitude: -41.292037144411495,
         mapIcon: './map-marker-alt-solid.svg',
         ShowAll: 'All'
+
+         
 },
     {
         id: 105,
@@ -152,6 +178,9 @@ let objectArray = [
         heading: 'Bolton Hotel is an elegant, boutique, 5-star hotel offering free WiFi on multiple devices and in-room iPad minis',
         Facilities: '',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        Lunch: '30',
+        Dinner: '35',
+        KidsMenu: '20',
         minAdultGuests: 1,
         maxAdultGuests:1,
         minAdultNights:1,
@@ -161,9 +190,11 @@ let objectArray = [
         minKidsNights:1,
         maxKidsNights:10,
         tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
-        latitude: 65.78625698912022,
-        longitude: -21.98442118600065,
+        latitude:  174.77504800567718,
+        longitude:  -41.2790184824096, 
         ShowAll: 'All'
+
+      
     },
     {
         id: 106,
@@ -177,6 +208,9 @@ let objectArray = [
         info: 'It features a fully equipped fitness centre and guests enjoy free unlimited WiFi access.Guests at CityLife Wellington Hotel can choose between studios with open-plan sleeping and living areas, or larger 1 and 2-bedroom apartments with separate living rooms and kitchens.',
         heading: 'Citylife Wellington offers modern 4-star accommodation in the heart of Wellington’s trendy shopping area of Lambton Quay.',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        Lunch: '30',
+        Dinner: '35',
+        KidsMenu: '20',
         minAdultGuests: 2,
         maxAdultGuests:4,
         minAdultNights:3,
@@ -186,9 +220,11 @@ let objectArray = [
         minKidsNights:3,
         maxKidsNights:10,
         tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
-        latitude: 65.06074936401986,
-        longitude: -16.69548393975031,
+        latitude:  174.7758506400737,
+        longitude: -41.28452354070732, 
         ShowAll: 'All'
+
+       
     },
     {
         id: 107,
@@ -203,6 +239,9 @@ let objectArray = [
         heading: 'The Marion is your beautiful hostel right in the heart of New Zealand capital, near Cuba Street and Courtenay Place, where the cultural and bohemian city life is happening.',
         Facilities: '',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        Lunch: '30',
+        Dinner: '35',
+        KidsMenu: '20',
         minAdultGuests: 1,
         maxAdultGuests:4,
         minAdultNights:2,
@@ -212,9 +251,11 @@ let objectArray = [
         minKidsNights:2,
         maxKidsNights: 15,
         tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
-        latitude: 64.07384853513256,
-        longitude: -21.485987309390673,
+        latitude: 174.7775524763237,
+        longitude:  -41.293969451574654,
         ShowAll: 'All'
+
+        
     },
 
     {
@@ -230,6 +271,9 @@ let objectArray = [
         heading: 'Lodge in the City is the cheapest Hostel in Wellington',
         Facilities: '',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        Lunch: '30',
+        Dinner: '35',
+        KidsMenu: '20',
         minAdultGuests: 1,
         maxAdultGuests:4,
         minAdultNights:2,
@@ -239,9 +283,11 @@ let objectArray = [
         minKidsNights:2,
         maxKidsNights: 15,
         tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
-        latitude: 64.07384853513256,
-        longitude: -21.485987309390673,
+        latitude: 174.77733901123779,
+        longitude: -41.29549960011848,
         ShowAll: 'All'
+
+         
     },
     {
         id: 109,
@@ -256,6 +302,9 @@ let objectArray = [
         heading: 'Get the celebrity treatment with world-class service at Hilton Hotel Centrally located at CBD Wellington.',
         Facilities: '',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        Lunch: '30',
+        Dinner: '35',
+        KidsMenu: '20',
         minAdultGuests: 1,
         maxAdultGuests:4,
         minAdultNights:2,
@@ -265,9 +314,11 @@ let objectArray = [
         minKidsNights:2,
         maxKidsNights: 15,
         tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
-        latitude: 64.07384853513256,
-        longitude: -21.485987309390673,
+        latitude:  174.78067333028892,
+        longitude:  -41.280056613137866,
         ShowAll: 'All'
+
+       
     },
     {
         id: 110,
@@ -282,6 +333,9 @@ let objectArray = [
         heading: 'The Dwellington perfectly blends the homely, the cozy and the stylish within a backpackers property. We guarantee you will not stay in a hostel as luxurious as this anywhere in New Zealand.',
         Facilities: '',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        LunchPrice: '30',
+        DinnerPrice: '35',
+        KidsMenuPrice: '20',
         minAdultGuests: 1,
         maxAdultGuests:4,
         minAdultNights:2,
@@ -291,9 +345,11 @@ let objectArray = [
         minKidsNights:2,
         maxKidsNights: 15,
         tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
-        latitude: 64.07384853513256,
-        longitude: -21.485987309390673,
+        latitude: 174.78000778425434,
+        longitude:   -41.27322057288533,
         ShowAll: 'All'
+
+      
     },
     {
         id: 111,
@@ -308,6 +364,9 @@ let objectArray = [
         heading: 'Get the celebrity treatment with world-class service at Hilton Hotel Centrally located at CBD Wellington.',
         Facilities: '',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        LunchPrice: '30',
+        DinnerPrice: '35',
+        KidsMenuPrice: '20',
         minAdultGuests: 1,
         maxAdultGuests:4,
         minAdultNights:2,
@@ -317,9 +376,11 @@ let objectArray = [
         minKidsNights:2,
         maxKidsNights: 15,
         tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
-        latitude: 64.07384853513256,
-        longitude: -21.485987309390673,
+        latitude: 174.8279330267126,
+        longitude:   -41.22891857818512,
         ShowAll: 'All'
+
+       
     },
     {
         id: 112,
@@ -334,6 +395,9 @@ let objectArray = [
         heading: 'Trek Global is the friendly, fun backpackers in the heart of Wellington.',
         Facilities: '',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        LunchPrice: '30',
+        DinnerPrice: '35',
+        KidsMenuPrice: '20',
         minAdultGuests: 1,
         maxAdultGuests:4,
         minAdultNights:2,
@@ -343,9 +407,11 @@ let objectArray = [
         minKidsNights:2,
         maxKidsNights: 15,
         tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
-        latitude: 64.07384853513256,
-        longitude: -21.485987309390673,
+        latitude:  174.77411271123762,
+        longitude: -41.28883605574653,
         ShowAll: 'All'
+
+        
     },
     {
         id: 113,
@@ -360,6 +426,9 @@ let objectArray = [
         heading: 'Get the celebrity treatment with world-class service at Hilton Hotel Centrally located at CBD Wellington.',
         Facilities: '',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        LunchPrice: '30',
+        DinnerPrice: '35',
+        KidsMenuPrice: '20',
         minAdultGuests: 1,
         maxAdultGuests:4,
         minAdultNights:2,
@@ -369,9 +438,11 @@ let objectArray = [
         minKidsNights:2,
         maxKidsNights: 15,
         tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
-        latitude: 64.07384853513256,
-        longitude: -21.485987309390673,
+        latitude: 174.77218168240165,
+        longitude:  -41.297250103237666, 
         ShowAll: 'All'
+
+       
     },
     {
         id: 114,
@@ -386,6 +457,9 @@ let objectArray = [
         heading: 'Situated in the heart of Wellington’s entertainment precinct, Apollo Lodge Motel offers free WiFi and free off-street parking, subject to availability. Each room includes heating and satellite TV.',
         Facilities: '',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        LunchPrice: '30',
+        DinnerPrice: '35',
+        KidsMenuPrice: '20',
         minAdultGuests: 1,
         maxAdultGuests:4,
         minAdultNights:2,
@@ -395,9 +469,11 @@ let objectArray = [
         minKidsNights:2,
         maxKidsNights: 15,
         tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
-        latitude: 64.07384853513256,
-        longitude: -21.485987309390673,
+        latitude: 174.78688732287586,
+        longitude:  -41.29456576636624,
         ShowAll: 'All'
+
+       
     },
     {
         id: 115,
@@ -412,6 +488,9 @@ let objectArray = [
         heading: 'Get the celebrity treatment with world-class service at Hilton Hotel Centrally located at CBD Wellington.',
         Facilities: '',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        LunchPrice: '30',
+        DinnerPrice: '35',
+        KidsMenuPrice: '20',
         minAdultGuests: 1,
         maxAdultGuests:4,
         minAdultNights:2,
@@ -421,9 +500,12 @@ let objectArray = [
         minKidsNights:2,
         maxKidsNights: 15,
         tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
-        latitude: 64.07384853513256,
-        longitude: -21.485987309390673,
+        latitude: 174.77864990938477,
+        longitude:    -41.30925338040178,
         ShowAll: 'All'
+      
+
+        
     },
     {
         id: 116,
@@ -438,6 +520,9 @@ let objectArray = [
         heading: 'Refurbished in 2016, Newlands Court Motel is located in Newlands, within 15 minutes’ drive from the centre of Wellington. Guests of this motel can enjoy gardens and free on-site parking.',
         Facilities: '',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        LunchPrice: '30',
+        DinnerPrice: '35',
+        KidsMenuPrice: '20',
         minAdultGuests: 1,
         maxAdultGuests:4,
         minAdultNights:2,
@@ -447,9 +532,11 @@ let objectArray = [
         minKidsNights:2,
         maxKidsNights: 15,
         tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
-        latitude: 64.07384853513256,
-        longitude: -21.485987309390673,
+        latitude: 174.81833718610656,
+        longitude: -41.229781000800855,
         ShowAll: 'All'
+
+        
     },
     {
         id: 117,
@@ -464,6 +551,9 @@ let objectArray = [
         heading: 'Halswell Lodge is located next to Courtenay Place in central Wellington.',
         Facilities: '',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        LunchPrice: '30',
+        DinnerPrice: '35',
+        KidsMenuPrice: '20',
         minAdultGuests: 1,
         maxAdultGuests:4,
         minAdultNights:2,
@@ -473,9 +563,11 @@ let objectArray = [
         minKidsNights:2,
         maxKidsNights: 15,
         tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
-        latitude: 64.07384853513256,
-        longitude: -21.485987309390673,
+        latitude:  174.7846122628323,
+        longitude:  -41.294992745572614,
         ShowAll: 'All'
+
+       
     },
     {
         id: 118,
@@ -490,6 +582,9 @@ let objectArray = [
         heading: 'Get the celebrity treatment with world-class service at Hilton Hotel Centrally located at CBD Wellington.',
         Facilities: '',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        LunchPrice: '30',
+        DinnerPrice: '35',
+        KidsMenuPrice: '20',
         minAdultGuests: 1,
         maxAdultGuests:4,
         minAdultNights:2,
@@ -499,9 +594,11 @@ let objectArray = [
         minKidsNights:2,
         maxKidsNights: 15,
         tag: ['hotel', 'hostel', 'motel', 'house', 'backpackers'],
-        latitude: 64.07384853513256,
-        longitude: -21.485987309390673,
+        latitude: 174.77423838425491,
+        longitude: -41.293347715178264,
         ShowAll: 'All'
+
+        
     },
     {
         id: 119,
@@ -520,6 +617,9 @@ let objectArray = [
         Facilities4: '',
         Facilities5: '',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        LunchPrice: '30',
+        DinnerPrice: '35',
+        KidsMenuPrice: '20',
         minAdultGuests: 1,
         maxAdultGuests:4,
         minAdultNights:2,
@@ -546,6 +646,9 @@ let objectArray = [
         heading: 'This is a studio apartment, so is cute and small, but it has everything you need including laundry and cooking facilities. It is completely private.',
         Facilities: '',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        Lunch: '30',
+        Dinner: '35',
+        KidsMenu: '20',
         minAdultGuests: 1,
         maxAdultGuests:4,
         minAdultNights:2,
@@ -572,6 +675,9 @@ let objectArray = [
         heading: 'Perfect for couples, solo adventurers, and business travellers.',
         Facilities: '',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        LunchPrice: '30',
+        DinnerPrice: '35',
+        KidsMenuPrice: '20',
         minAdultGuests: 1,
         maxAdultGuests:4,
         minAdultNights:2,
@@ -599,6 +705,9 @@ let objectArray = [
         heading: 'Lovely family home with separate downstairs for guests to enjoy with WIFI and 50" LCD TV with complimentary Netflix & Apple TV',
         Facilities: '',
         meal: ['breakfast', 'lunch', 'dinner', 'kids meal'],
+        LunchPrice: '30',
+        DinnerPrice: '35',
+        KidsMenuPrice: '20',
         minAdultGuests: 1,
         maxAdultGuests: 4,
         minAdultNights: 2,
@@ -626,6 +735,9 @@ let objectArray = [
         heading: 'Easy walking to all central wellington attractions',
         Facilities: '',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        LunchPrice: '30',
+        DinnerPrice: '35',
+        KidsMenuPrice: '20',
         minAdultGuests: 1,
         maxAdultGuests:4,
         minAdultNights:2,
@@ -653,6 +765,9 @@ let objectArray = [
         heading: 'Welcome to the heart of Welly!',
         Facilities: '',
         meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        Lunch: '30',
+        Dinner: '35',
+        KidsMenu: '20',
         minAdultGuests: 1,
         maxAdultGuests:4,
         minAdultNights:2,
@@ -704,6 +819,8 @@ function filterOptions(event) {
             if (((nights <= objectArray[i].maxAdultNights) && (nights >= objectArray[i].minAdultNights)) + ((nights <= objectArray[i].maxKidsNights) && (nights >= objectArray[i].minKidsNights))
                 && ((guests <= objectArray[i].maxAdultGuests) && (guests >= objectArray[i].minAdultGuests)) + ((nights <= objectArray[i].maxKidsNights) && (nights >= objectArray[i].minKidsNights))) {
                 generateCard(i);
+
+
                 let location = { lat: objectArray[i].latitude, lng: objectArray[i].longitude };
                 console.log(location);
                 let marker = new google.maps.Marker({
@@ -717,6 +834,8 @@ function filterOptions(event) {
     }
 }
 console.log(markers);
+
+
 
 
 
@@ -832,7 +951,7 @@ function TypeAcomodation(event){
     // end of value check
 
     let i = 0;
-    // start of selcted loop
+    // start of selected loop
     for (i = 0; i < selectedAcomodation.length; i++) {
 
         if (selectedAcomodation[i] === 'hotel') {
@@ -845,6 +964,8 @@ function TypeAcomodation(event){
                     for (i = 0; i < objectArray.length; i++);
                     //    start of append
                     $('#cardContent').append(
+
+                        
                         `
                                     <div class="card card--style" style="width: 18rem;">
                                         <div class="img-container">
@@ -854,11 +975,15 @@ function TypeAcomodation(event){
                                             <h5 class="card-title">${objectArray[i].name}</h5>
                                             <p class="card-text">${objectArray[i].type}</p>
                                             <p class="card-text">$${objectArray[i].price}</p>
-                                            <button id="${objectArray[i].meal}" type="button" class="btn btn-primary moreInformation" data-toggle="modal" data-target="#exampleModalCenter">
+                                            <button id="${objectArray[i].image}" type="button" class="btn btn-primary moreInformation" data-toggle="modal" data-target="#exampleModalCenter">
                                                 more info
                                             </button>
                                         </div>
                                     </div>
+
+                                
+
+
                             `
                     );
                     // end of append
@@ -922,18 +1047,31 @@ function generateCard(x){
       <div class="card-body">
         <h5 class="card-title">${objectArray[x].name}</h5>
         <p class="card-text">price per night is $${objectArray[x].price}</p>
-        <a href="#" class="btn btn-primary">Book</a>
-        <button id="${objectArray[x].id}" type="button" class="btn btn-primary moreInformation" data-toggle="modal" data-target="#exampleModalCenter">More Info</button>
+
+        
+        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Book</a>
+
+        
+        <button id="${objectArray[x].id}" type="button" class="btn btn-secondary moreInformation" data-toggle="modal" data-target="#exampleModalCenter">Meal Option</button>
       </div>
     </div>
+
+
+    
       `
 
   );
     };
 
+
+    
+
+
 //filter search
 
 userSearch.addEventListener('click',filterOptions);
+
+
 
 
 
