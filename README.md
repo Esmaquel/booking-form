@@ -22,3 +22,4 @@ https://dev.to/pdbhat07/simple-search-bar-with-javascript-110k
 https://rachelaemmer.medium.com/how-to-create-a-search-bar-in-a-basic-javascript-application-f031848079e9
 https://www.jamesqquick.com/blog/build-a-javascript-search-bar
 https://codepen.io/jamesqquick/pen/XWJxBQv
+https://api.jqueryui.com/datepicker/
