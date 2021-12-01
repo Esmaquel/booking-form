@@ -23,3 +23,4 @@ https://rachelaemmer.medium.com/how-to-create-a-search-bar-in-a-basic-javascript
 https://www.jamesqquick.com/blog/build-a-javascript-search-bar
 https://codepen.io/jamesqquick/pen/XWJxBQv
 https://api.jqueryui.com/datepicker/
+https://developers.google.com/maps/documentation/javascript/examples/directions-waypoints?hl=it#maps_directions_waypoints-typescript
