@@ -24,3 +24,4 @@ https://www.jamesqquick.com/blog/build-a-javascript-search-bar
 https://codepen.io/jamesqquick/pen/XWJxBQv
 https://api.jqueryui.com/datepicker/
 https://developers.google.com/maps/documentation/javascript/examples/directions-waypoints?hl=it#maps_directions_waypoints-typescript
+https://api.jqueryui.com/datepicker/
