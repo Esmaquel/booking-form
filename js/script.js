@@ -2,6 +2,7 @@ console.log('Im linked');
 const userSearch = document.querySelector('#userSearch');
 const searchFilter = document.querySelector("#searchFilter");
 const list = document.getElementById('list');
+const calculateTotCost = document.querySelector('#calculateTotCost');
 
 
 
@@ -49,6 +50,11 @@ let objectArray = [
         info: 'It offers stylish accomodation with picturesque views of the hillsides and Botanic Garden',
         heading: 'Get the celebrity treatment with world-class service at Hilton Hotel Centrally located at CBD Wellington.',
         Facilities: './img/parking-solid.svg',
+        meal:['breakfast', 'lunch', 'dinner', 'kids meal'],
+        Breakfast: '25',
+        Lunch: '30',
+        Dinner: '35',
+        KidsMenu: '20',
         minAdultGuests: 1,
         maxAduktGuests: 2,
         minAdultGuests: 1,
@@ -818,8 +824,31 @@ function filterOptions(event) {
         for (let i = 0; i < objectArray.length; i++) {
             if (((nights <= objectArray[i].maxAdultNights) && (nights >= objectArray[i].minAdultNights)) + ((nights <= objectArray[i].maxKidsNights) && (nights >= objectArray[i].minKidsNights))
                 && ((guests <= objectArray[i].maxAdultGuests) && (guests >= objectArray[i].minAdultGuests)) + ((nights <= objectArray[i].maxKidsNights) && (nights >= objectArray[i].minKidsNights))) {
-                generateCard(i);
+                generateCard(i, nights);
 
+
+                // function calculateTotCost(nights, guest, addMeal){
+                //     console.log(calculateTotCost);
+                // };
+
+                // let calculateTotCost = numberOfPeople, numberOfkids, myDropdownMenu = $('#numberOfPeople') + $("#numberOfkids") + $("#myDropdownMenu").val();
+                // console.log(numberOfPeople);
+                // console.log(numberOfkids);
+                // console.log(myDropdownMenu);
+                // console.log(calculateTotCost);
+                // displayOptions(numberOfDays, numberOfPeople, myDropdownMenu);
+
+                
+
+
+                
+
+
+
+                
+                
+                
+// Map ------
 
                 let location = { lat: objectArray[i].latitude, lng: objectArray[i].longitude };
                 console.log(location);
@@ -835,10 +864,6 @@ function filterOptions(event) {
 }
 console.log(markers);
 
-
-
-
-
 function reloadMarkers(){
     // loop through our array and set the map to null value
     for(let i =0; i<markers.length; i++){
@@ -846,6 +871,9 @@ function reloadMarkers(){
     }
     markers=[];
 }
+
+
+
 
 //start modal---
 
@@ -866,6 +894,27 @@ function objectArrayCardInfo(x){
                 </button>
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             `
         );
@@ -1038,8 +1087,11 @@ function TypeAcomodation(event){
 };
 // end of selected loop
 
-function generateCard(x){
+function generateCard(x, totalNights){
+    console.log(totalNights);
   $('#acommodationCardContainer').append(
+
+
       `
       <div class="card" style="width: 18rem;">
 
@@ -1047,7 +1099,7 @@ function generateCard(x){
       <div class="card-body">
         <h5 class="card-title">${objectArray[x].name}</h5>
         <p class="card-text">price per night is $${objectArray[x].price}</p>
-
+        <p class="card-text">total cost $${objectArray[x].price * totalNights}</p>
         
         <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Book</a>
 
@@ -1070,7 +1122,6 @@ function generateCard(x){
 //filter search
 
 userSearch.addEventListener('click',filterOptions);
-
 
 
 
