@@ -15,7 +15,7 @@ Hostel 1 person – $30/night – min 1 night, max 10 nights
 Motel 2-4 people $90/night – min 3 nights, max 10 nights
 House 1-4 people $240/night – min 2 nights, max 15 nights
 
-Resoureces:
+Resources:
 https://www.geeksforgeeks.org/search-bar-using-html-css-and-javascript/
 https://www.w3schools.com/howto/howto_js_filter_lists.asp
 https://dev.to/pdbhat07/simple-search-bar-with-javascript-110k
@@ -25,3 +25,4 @@ https://codepen.io/jamesqquick/pen/XWJxBQv
 https://api.jqueryui.com/datepicker/
 https://developers.google.com/maps/documentation/javascript/examples/directions-waypoints?hl=it#maps_directions_waypoints-typescript
 https://api.jqueryui.com/datepicker/
+https://validator.w3.org/
