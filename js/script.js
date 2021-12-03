@@ -81,6 +81,7 @@ let objectArray = [
         image01: './img/hotel-023.jpg',
         image02: './img/hotel-024.jpg',
         image03: './img/hotel-011.jpg',
+        imageBfast: './img/breakfast-01.jpeg',
         info: 'This 4.5-star hotel features a fitness centre, on site restaurant and bar, room service and 24-hour front desk. Offering stylish and contemporary guest rooms, Rydges Wellington Airport provides free unlimited WiFi. It is a 20-minute drive from Wellington CBD.',
         heading: 'Conveniently located above the international terminal of Wellington Airport,',
         Facilities: '',
@@ -827,29 +828,6 @@ function filterOptions(event) {
                 generateCard(i, nights);
 
 
-                // function calculateTotCost(nights, guest, addMeal){
-                //     console.log(calculateTotCost);
-                // };
-
-                // let calculateTotCost = numberOfPeople, numberOfkids, myDropdownMenu = $('#numberOfPeople') + $("#numberOfkids") + $("#myDropdownMenu").val();
-                // console.log(numberOfPeople);
-                // console.log(numberOfkids);
-                // console.log(myDropdownMenu);
-                // console.log(calculateTotCost);
-                // displayOptions(numberOfDays, numberOfPeople, myDropdownMenu);
-
-                
-
-
-                
-
-
-
-                
-                
-                
-// Map ------
-
                 let location = { lat: objectArray[i].latitude, lng: objectArray[i].longitude };
                 console.log(location);
                 let marker = new google.maps.Marker({
@@ -859,7 +837,10 @@ function filterOptions(event) {
                 });
                 markers.push(marker);
             }
+            generateFinalCostl(i);
         }
+       
+
     }
 }
 console.log(markers);
@@ -894,24 +875,6 @@ function objectArrayCardInfo(x){
                 </button>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1100,24 +1063,50 @@ function generateCard(x, totalNights){
         <h5 class="card-title">${objectArray[x].name}</h5>
         <p class="card-text">price per night is $${objectArray[x].price}</p>
         <p class="card-text">total cost $${objectArray[x].price * totalNights}</p>
-        
-        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Book</a>
 
-        
+        <button id="${objectArray[x].id}" type="button" class="btn btn-primary finalPrice" data-toggle="modal" data-target="#staticBackdrop">Book 
+        </button>
+       
         <button id="${objectArray[x].id}" type="button" class="btn btn-secondary moreInformation" data-toggle="modal" data-target="#exampleModalCenter">Meal Option</button>
       </div>
     </div>
 
+    <!-- Scrollable modal -->
+    <div class="modal-dialog modal-dialog-scrollable">
+     ...
+    </div>
 
     
       `
 
   );
-    };
+};
+
+function generateFinalCostl(x, finalPrice){
+    console.log(finalPrice);
+    // alert('booked');
+        $('.finalPrice').click(function(){
+            console.log('clicked');
+            console.log("clicked");
+            let i = 0;
+            for(i = 0; i<objectArray.length; i++){
+                if(parseInt(this.id) === objectArray[i].id){
+                    $('.modal-body').empty().append(
 
 
-    
+                        `
+                        <p class="card-text">price per night is $${objectArray[x].price}</p>
+                        <p class="card-text">total cost $${objectArray[x].price}</p>
+                        <img class="card-img-top" src="${objectArray[x].imageBfast}" alt="Card image cap">
+                        
+                        
+                        `
 
+                        );
+                    }
+                }
+            });
+}
 
 //filter search
 
